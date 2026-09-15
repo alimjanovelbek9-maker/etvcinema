@@ -1,0 +1,313 @@
+import { useState, useEffect, useMemo, useCallback } from 'react';
+import { Header } from './components/Header';
+import { MovieCard } from './components/MovieCard';
+import { BottomNavigation } from './components/BottomNavigation';
+import { SearchPage } from './components/SearchPage';
+import { SettingsPage } from './components/SettingsPage';
+import { AdminPanel } from './components/AdminPanel';
+import { QuickActions } from './components/QuickActions';
+import { SerialDetailModal } from './components/SerialDetailModal';
+import { fetchMoviesFromCloud, saveMoviesToCloud } from './components/services/api';
+import type { NavTab, Language, TelegramUser, MovieItem, EpisodeItem } from './types';
+
+import rawMoviesData from './data/movies.json';
+
+const generateRandomId = () => Math.floor(100000000 + Math.random() * 900000000);
+
+// JSON ichidan Kinolar va Seriallarni ajratib, Serial qismlarini guruhlash funksiyasi
+const parseMoviesFromJson = (): MovieItem[] => {
+  const moviesList: MovieItem[] = [];
+  const serialsGroupMap: { [key: string]: MovieItem } = {};
+
+  Object.entries(rawMoviesData).forEach(([codeStr, item], index) => {
+    const movie = item as {
+      caption?: string;
+      posterUrl?: string;
+      file_id?: string;
+      is_serial?: boolean;
+      serial_name?: string;
+      episode_number?: number;
+    };
+
+    const code = Number(codeStr) || (1000 + index);
+    const caption = movie.caption || '';
+
+    // Caption'dan Ma'lumotlarni qidirish
+    const titleMatch = caption.match(/\*\*Kino nomi:\*\*\s*(.*)/) || caption.match(/(?:Kino nomi|Nomi):\s*<b>?([^<\n*]+)<?\/?b>?/i);
+    const rawTitle = titleMatch ? titleMatch[1].split('\n')[0].replace(/\\n/g, '').replace(/<[^>]*>/g, '').trim() : `Kino #${code}`;
+
+    const ratingMatch = caption.match(/\*\*Baho:\*\*\s*([\d.]+)/) || caption.match(/(?:Baho|Reyting):\s*([\d.]+)/i);
+    const rating = ratingMatch ? ratingMatch[1] : '8.0';
+
+    const genreMatch = caption.match(/\*\*Janr:\*\*\s*(.*)/);
+    const genre = genreMatch ? genreMatch[1].split('\n')[0].replace(/\\n/g, '').trim() : '';
+
+    // Serial yoki Kinoligini aniqlash
+    const isSerial = movie.is_serial || genre.toLowerCase().includes('serial') || caption.toLowerCase().includes('qism');
+
+    if (isSerial) {
+      // Serial nomini tozalash (masalan "Chuqur 1-qism" bo'lsa "Chuqur" deb olish)
+      const serialName = movie.serial_name || rawTitle.replace(/\s*\(?\d+[-_ ]*qism\)?/i, '').trim();
+
+      let epNum = movie.episode_number;
+      if (!epNum) {
+        const epMatch = caption.match(/(\d+)[-_ ]*qism/i) || rawTitle.match(/(\d+)[-_ ]*qism/i);
+        epNum = epMatch ? parseInt(epMatch[1]) : 1;
+      }
+
+      const episodeObj: EpisodeItem = {
+        id: `ep_${code}`,
+        episodeNumber: epNum,
+        title: `${epNum}-Qism`,
+        code: code,
+        file_id: movie.file_id || '',
+        videoUrl: `https://t.me/EtvCinema_bot?start=${code}`,
+      };
+
+      if (serialsGroupMap[serialName]) {
+        // Mavjud serial bo'lsa qismni qo'shish
+        if (!serialsGroupMap[serialName].episodes) {
+          serialsGroupMap[serialName].episodes = [];
+        }
+        const exists = serialsGroupMap[serialName].episodes?.some((e) => e.code === code);
+        if (!exists) {
+          serialsGroupMap[serialName].episodes?.push(episodeObj);
+          serialsGroupMap[serialName].episodes?.sort((a, b) => a.episodeNumber - b.episodeNumber);
+        }
+      } else {
+        // Yangi serial karta yaratish
+        const newSerial: MovieItem = {
+          id: `serial_${serialName.replace(/\s+/g, '_')}`,
+          title: serialName,
+          category: 'Serial',
+          rating: rating,
+          posterUrl: movie.posterUrl || '',
+          episodes: [episodeObj],
+        };
+        serialsGroupMap[serialName] = newSerial;
+        moviesList.push(newSerial);
+      }
+    } else {
+      // Oddiy Kino
+      moviesList.push({
+        id: String(code),
+        title: rawTitle,
+        category: 'Kino',
+        rating: rating,
+        posterUrl: movie.posterUrl || '',
+        file_id: movie.file_id,
+        caption: movie.caption,
+        code: code,
+        videoUrl: `https://t.me/EtvCinema_bot?start=${code}`,
+      });
+    }
+  });
+
+  return moviesList;
+};
+
+export default function App() {
+  const [activeTab, setActiveTab] = useState<NavTab>('home');
+  const [isAdminPage, setIsAdminPage] = useState(false);
+  const [language, setLanguage] = useState<Language>('uz');
+  const [isDarkMode, setIsDarkMode] = useState(true);
+  const [enhancedAnimations, setEnhancedAnimations] = useState(true);
+
+  const [filterCategory, setFilterCategory] = useState<'all' | 'serial'>('all');
+  const [selectedSerialForModal, setSelectedSerialForModal] = useState<MovieItem | null>(null);
+
+  const [movies, setMovies] = useState<MovieItem[]>(() => {
+    const saved = localStorage.getItem('app_movies_list');
+    return saved ? JSON.parse(saved) : parseMoviesFromJson();
+  });
+
+  // 1. Bulutli bazadan barcha qurilmalar uchun sinxronizatsiya
+  useEffect(() => {
+    fetchMoviesFromCloud().then((cloudMovies) => {
+      if (cloudMovies && cloudMovies.length > 0) {
+        setMovies(cloudMovies);
+      }
+    });
+  }, []);
+
+  // 2. Kinolar o'zgarganda Bulutga va LocalStorage'ga saqlash
+  const updateMoviesData = useCallback((newMovies: MovieItem[]) => {
+    setMovies(newMovies);
+    localStorage.setItem('app_movies_list', JSON.stringify(newMovies));
+    saveMoviesToCloud(newMovies);
+  }, []);
+
+  const handleAddMovie = useCallback((newMovie: MovieItem) => {
+    const updated = [newMovie, ...movies];
+    updateMoviesData(updated);
+  }, [movies, updateMoviesData]);
+
+  const handleUpdateMovie = useCallback((updatedMovie: MovieItem) => {
+    const updated = movies.map((m) => (m.id === updatedMovie.id ? updatedMovie : m));
+    updateMoviesData(updated);
+  }, [movies, updateMoviesData]);
+
+  const [user] = useState<TelegramUser>(() => {
+    const telegramUser = (window as any).Telegram?.WebApp?.initDataUnsafe?.user;
+    return telegramUser
+      ? {
+          id: telegramUser.id,
+          first_name: telegramUser.first_name,
+          last_name: telegramUser.last_name,
+          username: telegramUser.username,
+          photo_url: telegramUser.photo_url,
+        }
+      : { id: generateRandomId(), first_name: 'Foydalanuvchi' };
+  });
+
+  // Domen yoniga /admin deb yozilganda admin paneli ochilishi
+  useEffect(() => {
+    const checkPath = () => {
+      if (window.location.pathname.includes('/admin') || window.location.hash.includes('admin')) {
+        setIsAdminPage(true);
+      }
+    };
+    checkPath();
+    window.addEventListener('popstate', checkPath);
+    return () => window.removeEventListener('popstate', checkPath);
+  }, []);
+
+  useEffect(() => {
+    const tg = (window as any).Telegram?.WebApp;
+    if (tg) {
+      tg.ready();
+      tg.expand();
+    }
+  }, []);
+
+  const handleSupportClick = () => {
+    const supportLink = 'https://t.me/alimjanove001';
+    const tg = (window as any).Telegram?.WebApp;
+    if (tg?.openTelegramLink) {
+      tg.openTelegramLink(supportLink);
+    } else {
+      window.open(supportLink, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  // Kategoriya bo'yicha to'g'ri filtrlash:
+  // Seriallar tugmasi bosilsa -> Faqat Seriallar
+  // Aks holda ("all" holatida) -> Faqat Kinolar (Barcha kinolar bo'limida seriallar chalkashmasligi uchun)
+  const displayedMovies = useMemo(() => {
+    return movies.filter((movie) => {
+      if (filterCategory === 'serial') {
+        return movie.category === 'Serial';
+      }
+      return movie.category === 'Kino';
+    });
+  }, [movies, filterCategory]);
+
+  // Kino/Serial Kartasi bosilganda mantiq
+  const handleMovieCardClick = useCallback((movie: MovieItem) => {
+    if (movie.category === 'Serial') {
+      setSelectedSerialForModal(movie);
+    } else if (movie.videoUrl) {
+      const tg = (window as any).Telegram?.WebApp;
+      if (tg?.openTelegramLink) {
+        tg.openTelegramLink(movie.videoUrl);
+      } else {
+        window.open(movie.videoUrl, '_blank', 'noopener,noreferrer');
+      }
+    }
+  }, []);
+
+  if (isAdminPage) {
+    return (
+      <AdminPanel
+        movies={movies}
+        onAddMovie={handleAddMovie}
+        onUpdateMovie={handleUpdateMovie}
+        onClose={() => {
+          setIsAdminPage(false);
+          window.history.pushState({}, '', '/');
+        }}
+      />
+    );
+  }
+
+  return (
+    <div className={`min-h-screen transition-colors duration-200 select-none pb-28 ${enhancedAnimations ? 'motion-boost' : ''} ${
+      isDarkMode ? 'bg-[#0d1222] text-white' : 'bg-gray-100 text-gray-900'
+    }`}>
+      {activeTab === 'settings' ? (
+        <SettingsPage
+          user={user}
+          language={language}
+          onLanguageChange={setLanguage}
+          isDarkMode={isDarkMode}
+          onToggleTheme={() => setIsDarkMode(!isDarkMode)}
+          enhancedAnimations={enhancedAnimations}
+          onToggleAnimations={() => setEnhancedAnimations(!enhancedAnimations)}
+          onSupportClick={handleSupportClick}
+        />
+      ) : activeTab === 'search' ? (
+        <SearchPage
+          user={user}
+          movies={movies}
+          language={language}
+          isDarkMode={isDarkMode}
+        />
+      ) : (
+        <>
+          <Header user={user} isDarkMode={isDarkMode} />
+
+          {/* Seriallar tugmasi bo'lgan ko'k blok */}
+          <QuickActions
+            language={language}
+            onSeriesClick={() => {
+              setFilterCategory(filterCategory === 'serial' ? 'all' : 'serial');
+            }}
+          />
+
+          <main className="px-3.5 pt-2 max-w-md mx-auto">
+            <div className="flex items-center justify-between mb-3 px-1">
+              <h2 className="text-sm font-bold text-gray-400">
+                {filterCategory === 'serial' ? 'Seriallar' : 'Barcha Kinolar'}
+              </h2>
+              {filterCategory === 'serial' && (
+                <button
+                  onClick={() => setFilterCategory('all')}
+                  className="text-xs text-blue-400 font-semibold hover:underline"
+                >
+                  Barchasini ko'rsatish
+                </button>
+              )}
+            </div>
+
+            {displayedMovies.length === 0 ? (
+              <div className="text-center py-12 text-gray-500 text-sm">
+                Hozircha ma'lumotlar mavjud emas.
+              </div>
+            ) : (
+              <div className="grid grid-cols-3 gap-3">
+                {displayedMovies.map((movie) => (
+                  <div key={movie.id} onClick={() => handleMovieCardClick(movie)}>
+                    <MovieCard item={movie} isDarkMode={isDarkMode} />
+                  </div>
+                ))}
+              </div>
+            )}
+          </main>
+        </>
+      )}
+
+      {/* Serial bosilganda uning barcha qismlarini chiqaruvchi Modal */}
+      <SerialDetailModal
+        serial={selectedSerialForModal}
+        onClose={() => setSelectedSerialForModal(null)}
+      />
+
+      <BottomNavigation
+        activeTab={activeTab}
+        onTabChange={setActiveTab}
+        language={language}
+        isDarkMode={isDarkMode}
+      />
+    </div>
+  );
+}
