@@ -110,7 +110,23 @@
     "is_serial": true,
     "serial_name": "Chuqur",
     "episode_number": 5
-  }
+  },
+"1005": {
+    "file_id": "BAACAgIAAxkBAAIB5WqplUuqRUbuNSMmEn1Bn87djhr2AALgCAACQ5EoSqPoeRCkhGl5PQQ",
+    "caption": "🎬 <b>Chuqur (6-Qism):</b>\n🎭 <b>Janr:</b> Drama\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://image.tmdb.org/t/p/original/7aL9P5NLSgBjdChcwp4cH1OLdKf.jpg",
+    "is_serial": true,
+    "serial_name": "Chuqur",
+    "episode_number": 6
+},
+"1006": {
+    "file_id": "BAACAgIAAxkBAAIB5mqplUubOxvB-7n2mCqangnHzOdxAAKWBwACz6QBS5f00mDHR_A9PQQ",
+    "caption": "🎬 <b>Chuqur (7-Qism):</b>\n🎭 <b>Janr:</b> Drama\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://image.tmdb.org/t/p/original/7aL9P5NLSgBjdChcwp4cH1OLdKf.jpg",
+    "is_serial": true,
+    "serial_name": "Chuqur",
+    "episode_number": 7
+}
 
 
 }
