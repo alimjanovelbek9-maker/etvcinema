@@ -14,10 +14,15 @@ import rawMoviesData from './data/movies.json';
 
 const generateRandomId = () => Math.floor(100000000 + Math.random() * 900000000);
 
+const normalizeSerialKey = (value: string): string =>
+  value.toLowerCase().replace(/[^a-z0-9]+/g, ' ').replace(/\s+/g, ' ').trim();
+
 // JSON ichidan Kinolar va Seriallarni ajratib, Serial qismlarini guruhlash funksiyasi
 const parseMoviesFromJson = (): MovieItem[] => {
   const moviesList: MovieItem[] = [];
   const serialsGroupMap: { [key: string]: MovieItem } = {};
+  const seenMovieKeys = new Set<string>();
+  const seenEpisodeKeys = new Set<string>();
 
   Object.entries(rawMoviesData).forEach(([codeStr, item], index) => {
     const movie = item as {
@@ -41,18 +46,25 @@ const parseMoviesFromJson = (): MovieItem[] => {
 
     const genreMatch = caption.match(/\*\*Janr:\*\*\s*(.*)/);
     const genre = genreMatch ? genreMatch[1].split('\n')[0].replace(/\\n/g, '').trim() : '';
-
-    // Serial yoki Kinoligini aniqlash
-    const isSerial = movie.is_serial || genre.toLowerCase().includes('serial') || caption.toLowerCase().includes('qism');
+    const isSerial = Boolean(movie.is_serial || movie.serial_name || movie.episode_number || genre.toLowerCase().includes('serial') || caption.toLowerCase().includes('qism'));
 
     if (isSerial) {
-      // Serial nomini tozalash (masalan "Chuqur 1-qism" bo'lsa "Chuqur" deb olish)
-      const serialName = movie.serial_name || rawTitle.replace(/\s*\(?\d+[-_ ]*qism\)?/i, '').trim();
+      const serialName = (movie.serial_name || rawTitle)
+        .replace(/\s*\(?\d+[-_ ]*qism\)?/i, '')
+        .replace(/\s+/g, ' ')
+        .trim();
+      const serialKey = normalizeSerialKey(serialName || `serial_${code}`);
+      const episodeKey = `${serialKey}-${code}`;
+
+      if (seenEpisodeKeys.has(episodeKey)) {
+        return;
+      }
+      seenEpisodeKeys.add(episodeKey);
 
       let epNum = movie.episode_number;
       if (!epNum) {
         const epMatch = caption.match(/(\d+)[-_ ]*qism/i) || rawTitle.match(/(\d+)[-_ ]*qism/i);
-        epNum = epMatch ? parseInt(epMatch[1]) : 1;
+        epNum = epMatch ? parseInt(epMatch[1], 10) : 1;
       }
 
       const episodeObj: EpisodeItem = {
@@ -64,46 +76,52 @@ const parseMoviesFromJson = (): MovieItem[] => {
         videoUrl: `https://t.me/EtvCinema_bot?start=${code}`,
       };
 
-      if (serialsGroupMap[serialName]) {
-        // Mavjud serial bo'lsa qismni qo'shish
-        if (!serialsGroupMap[serialName].episodes) {
-          serialsGroupMap[serialName].episodes = [];
+      const existingSerial = serialsGroupMap[serialKey];
+      if (existingSerial) {
+        if (!existingSerial.episodes) {
+          existingSerial.episodes = [];
         }
-        const exists = serialsGroupMap[serialName].episodes?.some((e) => e.code === code);
+        const exists = existingSerial.episodes.some((e) => e.code === code);
         if (!exists) {
-          serialsGroupMap[serialName].episodes?.push(episodeObj);
-          serialsGroupMap[serialName].episodes?.sort((a, b) => a.episodeNumber - b.episodeNumber);
+          existingSerial.episodes.push(episodeObj);
+          existingSerial.episodes.sort((a, b) => a.episodeNumber - b.episodeNumber);
         }
-      } else {
-        // Yangi serial karta yaratish
-        const newSerial: MovieItem = {
-          id: `serial_${serialName.replace(/\s+/g, '_')}`,
-          title: serialName,
-          category: 'Serial',
-          rating: rating,
-          posterUrl: movie.posterUrl || '',
-          episodes: [episodeObj],
-        };
-        serialsGroupMap[serialName] = newSerial;
-        moviesList.push(newSerial);
+        return;
       }
-    } else {
-      // Oddiy Kino
-      moviesList.push({
-        id: String(code),
-        title: rawTitle,
-        category: 'Kino',
+
+      const newSerial: MovieItem = {
+        id: `serial_${serialKey}`,
+        title: serialName,
+        category: 'Serial',
         rating: rating,
         posterUrl: movie.posterUrl || '',
-        file_id: movie.file_id,
-        caption: movie.caption,
-        code: code,
-        videoUrl: `https://t.me/EtvCinema_bot?start=${code}`,
-      });
+        episodes: [episodeObj],
+      };
+      serialsGroupMap[serialKey] = newSerial;
+      moviesList.push(newSerial);
+      return;
     }
+
+    const movieKey = `movie_${code}`;
+    if (seenMovieKeys.has(movieKey)) {
+      return;
+    }
+    seenMovieKeys.add(movieKey);
+
+    moviesList.push({
+      id: String(code),
+      title: rawTitle,
+      category: 'Kino',
+      rating: rating,
+      posterUrl: movie.posterUrl || '',
+      file_id: movie.file_id,
+      caption: movie.caption,
+      code: code,
+      videoUrl: `https://t.me/EtvCinema_bot?start=${code}`,
+    });
   });
 
-  return moviesList;
+  return moviesList.sort((a, b) => (Number(a.code ?? 0) > Number(b.code ?? 0) ? 1 : -1));
 };
 
 export default function App() {
