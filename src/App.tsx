@@ -1,4 +1,5 @@
 import { useState, useEffect, useMemo, useCallback } from 'react';
+import { Info, X, CreditCard, HeartHandshake } from 'lucide-react';
 import { Header } from './components/Header';
 import { MovieCard } from './components/MovieCard';
 import { BottomNavigation } from './components/BottomNavigation';
@@ -134,6 +135,9 @@ export default function App() {
   const [filterCategory, setFilterCategory] = useState<'all' | 'serial'>('all');
   const [selectedSerialForModal, setSelectedSerialForModal] = useState<MovieItem | null>(null);
 
+  // Eslatma modal oynasi holati (state)
+  const [isNoticeOpen, setIsNoticeOpen] = useState(false);
+
   const [movies, setMovies] = useState<MovieItem[]>(() => {
     const saved = localStorage.getItem('app_movies_list');
     return saved ? JSON.parse(saved) : parseMoviesFromJson();
@@ -208,9 +212,6 @@ export default function App() {
     }
   };
 
-  // Kategoriya bo'yicha to'g'ri filtrlash:
-  // Seriallar tugmasi bosilsa -> Faqat Seriallar
-  // Aks holda ("all" holatida) -> Faqat Kinolar (Barcha kinolar bo'limida seriallar chalkashmasligi uchun)
   const displayedMovies = useMemo(() => {
     return movies.filter((movie) => {
       if (filterCategory === 'serial') {
@@ -220,7 +221,6 @@ export default function App() {
     });
   }, [movies, filterCategory]);
 
-  // Kino/Serial Kartasi bosilganda mantiq
   const handleMovieCardClick = useCallback((movie: MovieItem) => {
     if (movie.category === 'Serial') {
       setSelectedSerialForModal(movie);
@@ -274,7 +274,7 @@ export default function App() {
         <>
           <Header user={user} isDarkMode={isDarkMode} />
 
-          {/* Seriallar tugmasi bo'lgan ko'k blok */}
+          {/* Seriallar va Qo'llab-quvvatlash ko'k bloki */}
           <QuickActions
             language={language}
             onSeriesClick={() => {
@@ -283,18 +283,31 @@ export default function App() {
           />
 
           <main className="px-3.5 pt-2 max-w-md mx-auto">
+            {/* Sarlavha va Eslatma tugmasi */}
             <div className="flex items-center justify-between mb-3 px-1">
               <h2 className="text-sm font-bold text-gray-400">
                 {filterCategory === 'serial' ? 'Seriallar' : 'Barcha Kinolar'}
               </h2>
-              {filterCategory === 'serial' && (
+
+              <div className="flex items-center gap-2">
+                {filterCategory === 'serial' && (
+                  <button
+                    onClick={() => setFilterCategory('all')}
+                    className="text-xs text-blue-400 font-semibold hover:underline mr-1"
+                  >
+                    Barchasini ko'rsatish
+                  </button>
+                )}
+
+                {/* Eslatma tugmasi */}
                 <button
-                  onClick={() => setFilterCategory('all')}
-                  className="text-xs text-blue-400 font-semibold hover:underline"
+                  onClick={() => setIsNoticeOpen(true)}
+                  className="flex items-center gap-1.5 bg-blue-600 hover:bg-blue-500 text-white text-xs font-semibold px-3 py-1.5 rounded-xl transition-all duration-200 shadow-md shadow-blue-600/30 active:scale-95"
                 >
-                  Barchasini ko'rsatish
+                  <Info className="w-3.5 h-3.5" />
+                  <span>Eslatma</span>
                 </button>
-              )}
+              </div>
             </div>
 
             {displayedMovies.length === 0 ? (
@@ -312,6 +325,62 @@ export default function App() {
             )}
           </main>
         </>
+      )}
+
+      {/* Eslatma oynasi (Modal) */}
+      {isNoticeOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/70 backdrop-blur-sm animate-fadeIn">
+          <div className="relative w-full max-w-sm bg-[#161d31] border border-slate-700/60 rounded-2xl shadow-2xl p-5 text-white overflow-hidden">
+            
+            {/* Yopish tugmasi (X) */}
+            <button
+              onClick={() => setIsNoticeOpen(false)}
+              className="absolute top-3.5 right-3.5 text-slate-400 hover:text-white bg-slate-800/80 p-1.5 rounded-full transition-colors"
+            >
+              <X className="w-4 h-4" />
+            </button>
+
+            {/* Sarlavha va belgi */}
+            <div className="flex items-center gap-2.5 mb-3">
+              <div className="p-2.5 bg-blue-600/20 text-blue-400 rounded-xl">
+                <HeartHandshake className="w-6 h-6" />
+              </div>
+              <h3 className="text-base font-bold text-white">Foydalanuvchilar diqqatiga!</h3>
+            </div>
+
+            {/* Matn qismi */}
+            <div className="space-y-3 text-slate-300 text-xs leading-relaxed">
+              <p>
+                Assalomu Alekum aziz foydalanuvchilar botimzdagi bazi kinolar sifati pastroq va 480 720 p bolishi mumkin biz 0 mabla'g bilan  bu loyihani yartganimiz uchun bizda finans tomonlama yetishmovchiliklar bor buning uchun uzur soraymiz 🤝
+              </p>
+              <p>
+                va agar biz kuchayib toliq yuqori sifatda kinolar yuklashimzni hohlasangiz quyidagi bank hisob raqamiga donat qilishingiz mumkin (ixtiyotiy) ☺️
+              </p>
+            </div>
+
+            {/* Bank karta raqami */}
+            <div className="mt-4 p-3 bg-slate-800/80 border border-slate-700/70 rounded-xl flex items-center gap-3">
+              <CreditCard className="w-5 h-5 text-blue-400 shrink-0" />
+              <div>
+                <div className="text-[10px] text-slate-400 font-medium">Bank hisob raqami:</div>
+                <div className="font-mono text-xs font-bold text-blue-300 tracking-wider">
+                  9860 0101 1391 7065
+                </div>
+              </div>
+            </div>
+
+            {/* Tushunarli yopish tugmasi */}
+            <div className="mt-4">
+              <button
+                onClick={() => setIsNoticeOpen(false)}
+                className="w-full py-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold text-xs rounded-xl transition-colors shadow-lg shadow-blue-600/20 active:scale-95"
+              >
+                Tushunarli
+              </button>
+            </div>
+
+          </div>
+        </div>
       )}
 
       {/* Serial bosilganda uning barcha qismlarini chiqaruvchi Modal */}

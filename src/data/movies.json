@@ -227,7 +227,7 @@
     "143": {
     "file_id": "BAACAgIAAxkBAAIEQWq1ZFRCkBG8CF5Ucha7-4pWag4yAAIGIQAC0oAIS7m-W7lp5OBzPQQ",
     "caption": "🎬 **Kino nomi:**  🎬  Amerikalik Telba\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
-    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPcW0DwZ5QGgOO-hHseusZjzpZrCIdnpbpteGswuvM-VtYBUFZFEsLSSE4&s=10"
+    "posterUrl": "https://m.media-amazon.com/images/S/pv-target-images/65b6145dee767445d7f98f35521a05f3d5f3b378d29fa11d300c67672b889efe._UR2000,3000_.jpg"
   },
 
 
@@ -372,6 +372,38 @@
     "is_serial": true,
     "serial_name": "Sumerki",
     "episode_number": 5
+},
+"2005": {
+    "file_id": "BAACAgQAAxkBAAIESWq1agygYH53s1PfzfOp0DtsejkaAAKICQACtA6ZUxsuf58K33BCPQQ",
+    "caption": "🎬 <b>Qasoskorlar 1 chi qism</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-c5fqlbDJyn5Y30D3hBcsP4cWJ96MJ9UnC3WdXfeh4JLgYM4UDWt3bgz&s=10", 
+    "is_serial": true,
+    "serial_name": "Qasoskorlar",
+    "episode_number": 1
+},
+"2006": {
+    "file_id": "BAACAgQAAxkBAAIESmq1agxFKDOXCb7r8YdCjGgCM7VyAAIjCQACtA6hU_RsISO68VnGPQQ",
+    "caption": "🎬 <b>Qasoskorlar 2 chi qism</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-c5fqlbDJyn5Y30D3hBcsP4cWJ96MJ9UnC3WdXfeh4JLgYM4UDWt3bgz&s=10", 
+    "is_serial": true,
+    "serial_name": "Qasoskorlar",
+    "episode_number": 2
+},
+"2007": {
+    "file_id": "BAACAgEAAxkBAAIES2q1agyp75wtVu4NfCfJgLF_TObUAAJfAQACXymhR8e1Cj-Erav5PQQ",
+    "caption": "🎬 <b>Qasoskorlar 3 chi qism</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-c5fqlbDJyn5Y30D3hBcsP4cWJ96MJ9UnC3WdXfeh4JLgYM4UDWt3bgz&s=10", 
+    "is_serial": true,
+    "serial_name": "Qasoskorlar",
+    "episode_number": 3
+},
+"2008": {
+    "file_id": "BAACAgEAAxkBAAIETGq1agwrSF3FRu8MzgvdNabCz87TAAJ1AQACyvWgR523WTxM4ILnPQQ",
+    "caption": "🎬 <b>Qasoskorlar 4 Final Intho</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-c5fqlbDJyn5Y30D3hBcsP4cWJ96MJ9UnC3WdXfeh4JLgYM4UDWt3bgz&s=10", 
+    "is_serial": true,
+    "serial_name": "Qasoskorlar",
+    "episode_number": 4
 }
 
 
