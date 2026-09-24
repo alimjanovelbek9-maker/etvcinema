@@ -219,6 +219,16 @@
     "caption": "🎬 **Kino nomi:**  🎬  Shamolni bo'ysundirgan bola\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 8/10\n🍿 Yoqimli tomosha!",
     "posterUrl": "https://images.uzmovi.net/ii/1619948889/a3ed22e9/34300900.jpg"
   },
+    "142": {
+    "file_id": "BAACAgQAAxkBAAIEBWq1VeQNKd9OYz42-FDXMsnA3R4aAAKRCAACLGwQUuTORpqEjeehPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬  7 Bo'lmadagi Mo'jiza\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT12cdTGl-zwN6XVyDVQKhJ5loVC1lMfqJmBH77A0hsOuilCZkmI1iYpT4&s=10"
+  },
+    "143": {
+    "file_id": "BAACAgQAAxkBAAIEBWq1VeQNKd9OYz42-FDXMsnA3R4aAAKRCAACLGwQUuTORpqEjeehPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬  7 Bo'lmadagi Mo'jiza\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT12cdTGl-zwN6XVyDVQKhJ5loVC1lMfqJmBH77A0hsOuilCZkmI1iYpT4&s=10"
+  },
 
 
 
@@ -310,7 +320,69 @@
     "is_serial": true,
     "serial_name": "Chuqur",
     "episode_number": 11
+},
+
+
+
+
+
+
+
+
+
+
+"1012": {
+    "file_id": "BAACAgIAAxkBAAIEJ2q1WmxNrn9xhGTsKBLjF8tvdfZQAAJxGwACioTASboK58qgYG_NPQQ",
+    "caption": "🎬 <b>Sumerki: Zulmat ostonasidagi muhabbat</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQXybBfvJ9baK54ipbwF4u_YJ1qz-dhKjShFf0GGQNacc065cgipSebz8&s=10",
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 1
+},
+"1013": {
+    "file_id": "BAACAgIAAxkBAAIEKWq1WvqYgI75dMyE1JJjRd09cYXOAALaHAACzsQISsCQ363mDq2lPQQ",
+    "caption": "🎬 <b>Sumerki: Yangi oy chiqishi</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeV0vKHGjodozKevlsgF3Yi2xckPaRCoVHaE9zSmdLDQ&s=10",
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 2
+},
+"1014": {
+    "file_id": "",
+    "caption": "🎬 <b>Sumerki: Yangi oy chiqishi</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeV0vKHGjodozKevlsgF3Yi2xckPaRCoVHaE9zSmdLDQ&s=10",
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 2
+},
+"1015": {
+    "file_id": "BAACAgIAAxkBAAIEK2q1WzpEti5ftnoUHE7tLiJq4FCZAAJuHwACkAwISgABlVWs0mHa1T0E",
+    "caption": "🎬 <b>Sumerki: Oy tutilishi</b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHqRMTUCJlZR2vPZEVY7s8i-D8mQeMjloPXVA7gFlYjg&s=10",
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 3
+},
+"1016": {
+    "file_id": "BAACAgQAAxkBAAIELWq1W8UWEubGYUFuLv-5yetnvBtdAAJKDwACGHoJUp2xcH7v0Yi-PQQ",
+    "caption": "🎬 <b>Sumerki: Tong otishi  </b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nurPzck0aMnHdP-wMNPyIXNgqDYam3GrMjz7Mffb6A&s  ",
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 4
+},
+"1017": {
+    "file_id": "BAACAgEAAxkBAAIEL2q1XE88YbqGhZEFny77aDuK-41CAAILAgACVXGpRmk7m-_sviH8PQQ",
+    "caption": "🎬 <b>Sumerki: Tong otishi-2  </b>\n🎭 <b>Janr:</b> Syujet\n⭐ <b>Baho:</b> 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRK-c5fqlbDJyn5Y30D3hBcsP4cWJ96MJ9UnC3WdXfeh4JLgYM4UDWt3bgz&s=10", 
+    "is_serial": true,
+    "serial_name": "Sumerki",
+    "episode_number": 5
 }
+
+
+
+
 
 
 
