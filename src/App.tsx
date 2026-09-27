@@ -139,8 +139,10 @@ export default function App() {
   // Bulutli bazadan sinxronizatsiya
   useEffect(() => {
     fetchMoviesFromCloud().then((cloudMovies) => {
-      if (cloudMovies && cloudMovies.length > 0) {
+      // Cloud data is authoritative, including an empty list after deleting the last item.
+      if (cloudMovies !== null) {
         setMovies(cloudMovies);
+        localStorage.setItem('app_movies_list', JSON.stringify(cloudMovies));
       }
     });
   }, []);
