@@ -1,0 +1,11 @@
+{
+  "qashqirlar-makoni": {
+    "title": "Qashqirlar Makoni",
+    "posterUrl": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=600&q=80",
+    "rating": "8.5",
+    "episodes": [
+      { "episodeNumber": 1, "title": "Boshlanish", "code": 2001 },
+      { "episodeNumber": 2, "title": "Yangi iz", "code": 2002 }
+    ]
+  }
+}

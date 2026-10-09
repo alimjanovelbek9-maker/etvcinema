@@ -1,0 +1,28 @@
+html {
+	scroll-behavior: smooth;
+}
+
+.motion-boost,
+.motion-boost * {
+	transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.motion-boost .backdrop-blur-md {
+	backdrop-filter: blur(18px) saturate(145%);
+}
+
+.motion-boost .motion-search-field {
+	backdrop-filter: blur(14px) saturate(135%);
+	box-shadow: 0 12px 35px rgb(3 8 24 / 22%), inset 0 1px 0 rgb(255 255 255 / 5%);
+}
+
+.motion-boost .motion-search-field:focus {
+	transform: translateY(-1px);
+	box-shadow: 0 16px 38px rgb(3 8 24 / 30%), 0 0 0 3px rgb(59 130 246 / 14%);
+}
+
+.motion-boost .rounded-2xl,
+.motion-boost .rounded-3xl {
+	transition: filter 400ms ease, transform 400ms ease, box-shadow 400ms ease;
+}
+@import "tailwindcss";
