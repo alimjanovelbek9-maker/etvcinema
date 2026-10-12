@@ -126,6 +126,20 @@ const applyBundledPosterUrls = (movies: MovieItem[]) =>
     return posterUrl ? { ...movie, posterUrl } : movie;
   });
 
+const mergeBundledMovies = (movies: MovieItem[]) => {
+  const mergedMovies = applyBundledPosterUrls(movies);
+  const existingMovieCodes = new Set(
+    mergedMovies
+      .filter((movie) => movie.category !== 'Serial')
+      .map((movie) => String(movie.code ?? movie.id)),
+  );
+  const missingBundledMovies = bundledMovies.filter(
+    (movie) => movie.category !== 'Serial' && !existingMovieCodes.has(String(movie.code ?? movie.id)),
+  );
+
+  return [...mergedMovies, ...missingBundledMovies];
+};
+
 export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [isAdminPage, setIsAdminPage] = useState(false);
@@ -140,14 +154,14 @@ export default function App() {
 
   const [movies, setMovies] = useState<MovieItem[]>(() => {
     const saved = localStorage.getItem('app_movies_list');
-    return saved ? applyBundledPosterUrls(JSON.parse(saved) as MovieItem[]) : bundledMovies;
+    return saved ? mergeBundledMovies(JSON.parse(saved) as MovieItem[]) : bundledMovies;
   });
 
   useEffect(() => {
     fetchMoviesFromCloud().then((cloudMovies) => {
       if (cloudMovies && cloudMovies.length > 0) {
         const seededSerials = bundledMovies.filter((movie) => movie.category === 'Serial');
-        const mergedMovies = applyBundledPosterUrls(cloudMovies.map((movie) => ({ ...movie })));
+        const mergedMovies = mergeBundledMovies(cloudMovies.map((movie) => ({ ...movie })));
 
         seededSerials.forEach((seedSerial) => {
           const existingIndex = mergedMovies.findIndex((movie) => movie.title === seedSerial.title && movie.category === 'Serial');
