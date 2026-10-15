@@ -32,7 +32,11 @@ export const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
     setShowModal(true);
   };
 
+<<<<<<< HEAD
   // Zaxira rasm (agar kiritilgan posterUrl ishlamasa)
+=======
+  // Zaxira rasm
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
   const fallbackImage = `https://via.placeholder.com/300x450/1e293b/ffffff?text=${encodeURIComponent(item.title)}`;
   const displayPoster = imageError || !posterUrl ? fallbackImage : posterUrl;
 
@@ -41,9 +45,15 @@ export const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
       {/* Karta */}
       <div 
         onClick={handleCardClick}
+<<<<<<< HEAD
         className="cursor-pointer group relative rounded-2xl overflow-hidden bg-[#161f38] border border-slate-800 hover:border-blue-500/50 transition-all duration-300 shadow-lg active:scale-95"
       >
         <div className="aspect-[2/3] relative overflow-hidden bg-slate-900">
+=======
+        className="cursor-pointer group relative rounded-xl overflow-hidden bg-[#161f38] border border-slate-800 hover:border-blue-500/50 transition-all duration-300 shadow-md active:scale-95 flex flex-col justify-between"
+      >
+        <div className="aspect-[2/3] relative overflow-hidden bg-slate-900 w-full">
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
           <img 
             src={displayPoster} 
             alt={title} 
@@ -52,17 +62,30 @@ export const MovieCard: React.FC<MovieCardProps> = ({ item }) => {
             onError={() => setImageError(true)}
             className="w-full h-full object-cover group-hover:scale-105 transition duration-300"
           />
+<<<<<<< HEAD
           <div className="absolute top-2 right-2 bg-black/70 backdrop-blur-md px-2 py-0.5 rounded-full flex items-center gap-1 text-[10px] font-bold text-amber-400 border border-amber-400/20">
             <Star className="w-3 h-3 fill-amber-400" />
+=======
+          <div className="absolute top-1 right-1 bg-black/75 backdrop-blur-md px-1.5 py-0.5 rounded-full flex items-center gap-0.5 text-[9px] font-bold text-amber-400 border border-amber-400/20">
+            <Star className="w-2.5 h-2.5 fill-amber-400" />
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
             {rating}
           </div>
         </div>
 
+<<<<<<< HEAD
         <div className="p-2.5">
           <h3 className="text-xs font-semibold truncate text-white">{title}</h3>
           <div className="flex items-center justify-between mt-1">
             <span className="text-[10px] text-gray-400 truncate max-w-[60%]">{category}</span>
             <span className="text-[10px] text-blue-400 font-mono font-bold bg-blue-500/10 px-1.5 py-0.5 rounded">#{item.id}</span>
+=======
+        <div className="p-1.5">
+          <h3 className="text-[11px] font-semibold truncate leading-tight text-white">{title}</h3>
+          <div className="flex items-center justify-between mt-1 gap-1">
+            <span className="text-[9px] text-gray-400 truncate max-w-[55%]">{category}</span>
+            <span className="text-[9px] text-blue-400 font-mono font-bold bg-blue-500/10 px-1 py-0.2 rounded">#{item.id}</span>
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
           </div>
         </div>
       </div>

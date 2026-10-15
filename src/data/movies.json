@@ -1,4 +1,13 @@
 {
+<<<<<<< HEAD
+=======
+  
+  "100": {
+    "file_id": "BAACAgIAAxkBAAIHYGrJPGiNr7PZ15KnUN5_QaTjgwLYAAJ4pwACvjpQSqDNhMklweJgPQQ",
+    "caption": "🎬 **Kino nomi:** Xudo Asrasin 1\n🎭 **Janr:** Comedy\n⭐ **Baho:** 8.4/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://www.goldenpages.uz/afisha-file/images/movie/120325122025gp/org_ec6a089c236364fb200ba11796986ddd_1400x900.webp"
+  },
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
   "101": {
     "file_id": "BAACAgIAAxkBAAMHaQUdZjIbreTLNtukxQwLiVjKv9kAAo2iAANFKUnAf8r3u-KN1z0E",
     "caption": "🎬 **Kino nomi:** Spider Man Brand New Day\n🎭 **Janr:** Fantastika / Jangovar\n⭐ **Baho:** 8.4/10\n🍿 Yoqimli tomosha!",
@@ -340,11 +349,16 @@
    "caption": "🎬 **Kino nomi:**  🎬  Uzuklar Hukmdori 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://avatars.mds.yandex.net/i?id=103e4b4fc5205419599b0de885c2388c0eeda0f0-12625475-images-thumbs&n=13"
  },
+<<<<<<< HEAD
    "167": {
+=======
+  "167": {
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
    "file_id": "BAACAgIAAxkBAAIFkGq-wI5_Wg6zpcgLeU6V-CGbWvnCAAK5IAAC_tnISb1S45Gb8_XZPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Rempeyj\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://images.uzmovi.net/ii/1590222095/762a924d/30595198.jpg"
  },
+<<<<<<< HEAD
   "168": {
    "file_id": "BAACAgQAAxkBAAIFlmq-wiDbrcpRmvLwepXfqz6-MOwwAAJwCgAChS6IUdm3bxxNbCUZPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Chegarasizlar 1\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
@@ -359,40 +373,84 @@
    "file_id": "BAACAgQAAxkBAAIFmmq-wxiqAAF4e1Lpmz7V9KgYHZG1dwACNwkAAmFpOVCFi1RvkQmKJT0E",
    "caption": "🎬 **Kino nomi:**  🎬  Chegarasizlar 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://files.itv.uz/uploads/content/poster/2025/01/14/49b780c2dd21c2eecf2cf8a7243b3835-q-700x1002.jpeg"
+=======
+ "168": {
+   "file_id": "BAACAgQAAxkBAAIFlmq-wiDbrcpRmvLwepXfqz6-MOwwAAJwCgAChS6IUdm3bxxNbCUZPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Chegarasizlar 1\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://img.ixbt.site/live/images/original/31/91/20/2023/08/01/7a341fb9d9.png?w=877"
+ },
+ "169": {
+   "file_id": "BAACAgQAAxkBAAIFlGq-whXtAq5Lrb-xC-8wknst4RrPAALOCQACXtGZUQr0vkoNrnSePQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Chegarasizlar 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://daxshat.net/uploads/posts/2020-10/1602677523_66a5sas3q.jpg"
+ },
+ "170": {
+   "file_id": "BAACAgQAAxkBAAIFmmq-wxiqAAF4e1Lpmz7V9KgYHZG1dwACNwkAAmFpOVCFi1RvkQmKJT0E",
+   "caption": "🎬 **Kino nomi:**  🎬  Chegarasizlar 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://files.itv.uz/uploads/content/poster/2025/01/14/49b780c2dd21c2eecf2cf8a7243b3835-q-700x1002.jpeg"
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
  },
  "171": {
    "file_id": "-BAACAgIAAxkBAAIFOmq7-xo3ftKAuKs3LE9Wbqr1oQa2AAKOJAACGaa4S7V3EC9julIqPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Qonli olmos\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+<<<<<<< HEAD
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
  },
   "172": {
    "file_id": "BAACAgEAAxkBAAIFvWrCdbDTAoaQQJmReXp_l6e11DadAAJlAAPKCJlGt_f0GoHnHPg9BA",
    "caption": "🎬 **Kino nomi:**  🎬  Titanik\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
+=======
+    "posterUrl": "https://avatars.mds.yandex.net/get-ott/1652588/2a00000186540b1c1352a39ada7b99646898/874x492"
+ },
+ "172": {
+   "file_id": "BAACAgEAAxkBAAIFvWrCdbDTAoaQQJmReXp_l6e11DadAAJlAAPKCJlGt_f0GoHnHPg9BA",
+   "caption": "🎬 **Kino nomi:**  🎬  Titanik\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1773646/dd1c36cb-4470-4e0b-93b6-2b8b43c7dcaa/3840x"
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
  },
  "173": {
    "file_id": "BAACAgIAAxkBAAIFxGrCfFCIj_Rd7hVHhh3NBDOof-jxAAKYHgACcIh4S0-JKR-yqJ54PQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 1\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+<<<<<<< HEAD
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
  },
   "174": {
    "file_id": "BAACAgQAAxkBAAIFxWrCfFAqvQbXhBqTM3fHZumEPHvEAAJwDAACN9CBUyxb9UzJ1YPGPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
+=======
+    "posterUrl": "https://ru-images-s.kinorium.com/movie/1080/185012.jpg?1776103159"
+ },
+ "174": {
+   "file_id": "BAACAgQAAxkBAAIFxWrCfFAqvQbXhBqTM3fHZumEPHvEAAJwDAACN9CBUyxb9UzJ1YPGPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://images-s.kinorium.com/movie/poster/230678/w1500_45462637.jpg"
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
  },
  "175": {
    "file_id": "BAACAgQAAxkBAAIFxmrCfFAr3AGzbszZzGCJ_FuvYjwaAAJxDAACN9CBU8-iTaO4S9IEPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+<<<<<<< HEAD
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
  },
   "176": {
    "file_id": "BAACAgQAAxkBAAIFyGrCfFADgbrwqnsMIGwfzn6MS2_LAAJyDAACN9CBUw14n7sOO6o7PQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 4\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
+=======
+    "posterUrl":"https://static.kinoafisha.info/k/movie_posters/1920x1080/upload/movie_posters/8/2/4/5428/185459aaaeeacc693d657f4f895996ff.jpg"
+ },
+ "176": {
+   "file_id": "BAACAgQAAxkBAAIFyGrCfFADgbrwqnsMIGwfzn6MS2_LAAJyDAACN9CBUw14n7sOO6o7PQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Udaburon bolalar 4\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://images-s.kinorium.com/movie/poster/501656/w1500_50469023.jpg  "
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
  },
  "177": {
    "file_id": "BAACAgQAAxkBAAIFzmrCfoKZP15R-MdY70jZ1EX839pIAAK7EgACeJ2xUbLoUwhxYQtQPQQ",
    "caption": "🎬 **Kino nomi:**  🎬  Super 30\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+<<<<<<< HEAD
    "posterUrl": "https://images-s.kinorium.com/movie/poster/340782/w1500_57224731.jpg"
  },
   "178": {
@@ -417,10 +475,41 @@
  },
 
     "182": {
+=======
+    "posterUrl": "https://files.itv.uz/uploads/content/poster/2024/08/16/091623d2c6c6387411910f3483bb3aa8-q-700x1002.jpeg"
+ },
+ "178": {
+   "file_id": "BAACAgQAAxkBAAIF0GrCft_dI-RDfY2eN9TWXbArwiKaAAKvCQACQJoAAVJfzw6B7qHQ4D0E",
+   "caption": "🎬 **Kino nomi:**  🎬  Sehrlangan Ela\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/eaa616ad-ea05-4fff-b5d8-b78d607aa0f5/1920x"
+ },
+ "179": {
+   "file_id": "BAACAgQAAxkBAAIF0mrCf2Mdj9_S1LfDBLF4zDMSHvGYAAI6CgACnjDoU-fjBZI-UpxhPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Pi hayoti\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://thumb.wikimedia.org/wikipedia/ru/thumb/d/d4/Life_of_Pi.jpg/500px-Life_of_Pi.jpg?utm_source=ru.wikipedia.org&amp;utm_campaign=parser&amp;utm_content=thumbnail"
+ },
+ "180": {
+   "file_id": "BAACAgIAAxkBAAIF1GrCf8tsiDIsdp9vhiC6jH9cw-hJAAIRBwACS2mwSzLe00hzF6qbPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬  Shlyapa kiygan mushik\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://uz-play.com/uploads/posts/2026-09/dr-seusning-shlyapa-kiygan-mushugi.webp"
+ },
+ "181": {
+   "file_id": "BAACAgQAAxkBAAIF1mrCgDnKPQiQM9AkkD4AASE1AAHomWEAAo4XAAIjRoBRnHsTKsb-9qU9BA",
+   "caption": "🎬 **Kino nomi:**  🎬  Aybsiz aybdor\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://kinolar.net/uploads/posts/2021-11/1637514554_image_1.jpg"
+ },
+   "182": {
+   "file_id": "BAACAgEAAxkBAAIF2GrCgKl8pZHo12tzn8j0zjvWP3tEAAKwAwACcHVRRQRvEnr_lQklPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Kichkina Nikolya\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/e221afb2-a8f3-49d2-bedd-22fc917cafed/600x900"
+ },
+   "183": {
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
    "file_id": "BAACAgQAAxkBAAIF2mrCgTfu-rPNMVn_ugZdVRgChMtOAAIDCgACfskoUPCWRhvQtMf4PQQ",
    "caption": "🎬 **Kino nomi:**  🎬   Halol O'gri\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
    "posterUrl": "https://avatars.mds.yandex.net/i?id=5dd7d9570e6b321dd8f6000c912e411dfbafecab-11846045-images-thumbs&n=13"
  },
+<<<<<<< HEAD
 
  
 
@@ -513,6 +602,233 @@
     "serial_name": "Chuqur",
     "episode_number": 11
 },
+=======
+   "184": {
+   "file_id": "BAACAgIAAxkBAAIG-mrGrOIti0ex7KuPJSnz3-b1-hUUAAJ2GAACGHgAAUsm74LSBgM1lD0E",
+   "caption": "🎬 **Kino nomi:**  🎬   King Kong\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://static.kinoafisha.info/k/movie_posters/1920x1080/upload/movie_posters/1/7/4/419471/910885361653464538.jpg"
+ },
+   "185": {
+   "file_id": "BAACAgEAAxkBAAIG-2rGrOJxPkyAFcbK3ANxMjLbuY2pAALEAAMTtBBHI8c1o8K3eX49BA",
+   "caption": "🎬 **Kino nomi:**  🎬   King Kong 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://images-s.kinorium.com/movie/poster/282630/w1500_2777291.jpg"
+ },
+   "186": {
+   "file_id": "BAACAgQAAxkBAAIG_GrGrOKewxiHhEHBuv9DKxVC5HOnAAI7CQACihEwU-dJYll0FdmNPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   King Kong Godzilaga qarshi 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://ru-images-s.kinorium.com/movie/1080/1563636.jpg?1767709956"
+ },
+   "187": {
+   "file_id": "BAACAgQAAxkBAAIHAAFqxq4l3vKOaoc0yjV4jbApsAUMbwACIQ0AAm9pOFDae1EoiJE_Fj0E",
+   "caption": "🎬 **Kino nomi:**  🎬   Shovvoz Getsbi\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://asilmedia.org/rasmlar/images/2021/10/30/nimh1rrDDLhgpG8XAYoUZXHYwb6.jpg"
+ },
+   "188": {
+   "file_id": "BAACAgQAAxkBAAIHAmrGrprCPJR-gAbjHGfPh3Ll_v2aAAL9CAACLEQYUlFL5L2R3_GYPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Qora Libosli Odamlar 1\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/i?id=d5a1f6bf34e29509271a0b8e41d2b16c26a05cad-16973011-images-thumbs&n=13"
+ },
+   "189": {
+   "file_id": "BAACAgQAAxkBAAIHA2rGrpr4sUOmuL_jtRazJVbDe7PLAAIeCQACD0wZUvjI3emH_hpVPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Qora Libosli Odamlar 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://images-s.kinorium.com/movie/cover/109442/w1500_37651436.jpg"
+ },
+   "190": {
+   "file_id": "BAACAgQAAxkBAAIHBGrGrppBRN0RJjNtrleBgMPaDplQAAJ-CQACTqMYUkCIOAfVb8Y6PQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Qora Libosli Odamlar 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://images-s.kinorium.com/movie/poster/480334/w1500_53695290.jpg"
+   },
+   "191": {
+   "file_id": "BAACAgIAAxkBAAIHPmrJMh3xKHgumqWdxgY8kSA3ofgTAAKSLwACMEbxSMUH9lJaYdRXPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Osmondagi Bolalar\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://files.itv.uz/uploads/content/poster/2023/10/05/544d9f9ff039fefee2f033ae4a05ee96-q-700x1002.jpeg"
+   },
+   "192": {
+   "file_id": "BAACAgEAAxkBAAIHQGrJNCbEcx9qCb-yefjrpFYavFRJAALyAgACMTUZRT9F3jsYQj3hPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 7\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://uzhd.org/uploads/posts/2024-11/photo_2024-11-19_19-02-23.webp"
+   },
+   "193": {
+   "file_id": "BAACAgEAAxkBAAIHQmrJNLC57vgoSqBHTMYj7wdS_225AALxAgACMTUZRQwOd392CQWPPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 6\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://www.prdisk.ru/images/povorot_ne_tuda_6_poslednijj_kurort_dvd_dvd_r_f2d_back.jpg"
+   },
+   "194": {
+   "file_id": "BAACAgQAAxkBAAIHRGrJNbQORCyvvatrLhU4pwo7FSRHAAIECgACFWMgUUYOQ6W5dgLRPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 5\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://images-s.kinorium.com/movie/fanart/775359/w1500_44856220.jpg"
+   },
+   "195": {
+   "file_id": "BAACAgEAAxkBAAIHRmrJNcxVYTM5ewr46l_aNarhjH4iAALwAgACMTUZRfac6QwmwsVOPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 4\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://ru-images-s.kinorium.com/movie/1080/575446.jpg?1743161722"
+   },
+   "196": {
+   "file_id": "BAACAgQAAxkBAAIHSGrJNhVB_K4dbDFN6crKNmPuk0wqAAIDCgACFWMgUQUnQyIecRzZPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 3\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/25e23f92-1443-4c71-804d-3108375faa1d/3840x"
+   },
+   "197": {
+   "file_id": "BAACAgEAAxkBAAIHSmrJNo7LP5EjltuvEfwZd7TGRHhmAAJ3AgACZgoZRWZr5ec9gDgRPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 2\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/i?id=2d147ff2a66b4d69f71bc3823937738cc9334fed-10641531-images-thumbs&n=13"
+   },
+   "198": {
+   "file_id": "BAACAgEAAxkBAAIHTGrJNrFRk5pOVpiob2QOLGCVhH2aAAJ4AgACZgoZRXz6HfLyYXJlPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Notog'ru Burilish 1\n🎭 **Janr:** Xoror\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://www.kino-teatr.ru/movie/poster/19371/39344.jpg"
+   },
+   "199": {
+   "file_id": "BAACAgEAAxkBAAIHTmrJNy3ZlCijXlYvnLLGKW0EIKudAAKiAgACq-z4RmPWSrXxhK4cPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Afsona\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://images.restream-media.net/images/ct91qjjir4sqiatd9cc0.jpg"
+   },
+   "200": {
+   "file_id": "BAACAgQAAxkBAAIHT2rJNy12G4IOt6ON9jmVNa0rARyzAAJmCAACRztJUsdlCUm1AV0mPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬   Men Robotman\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://media.kg-portal.ru/movies/i/irobot/posters/irobot_6.jpg"
+   },
+   "201": {
+   "file_id": "BAACAgIAAxkBAAIHUGrJNy2HtHwHj9Ma6oBGJFX0cYenAAKBKgAC4ywJSBHIPTQQaXJmPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬    Adam Loyihasi\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://uzmax.net/uploads/posts/2024-01/adam-loyihasi-2022-uzbek-tilida.jpg"
+   },
+   "202": {
+   "file_id": "BAACAgIAAxkBAAIHVGrJOIEl8FTVBxIt9zmygf6rdBJZAALgJwACbQdwSTHTIJzWVL1UPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬    Ip man 1\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/i?id=6bc43082afd9ee62d18745347e41def4f526b9ab-5679382-images-thumbs&n=13"
+   },
+   "203": {
+   "file_id": "BAACAgIAAxkBAAIHVWrJOIEKPDdGp6kYKLzeNtcwanKEAAI9JQACbQd4ScjbWsXPN-KoPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬    Ip man 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://ru-images-s.kinorium.com/movie/1080/475872.jpg?1783268830"
+   },
+   "204": {
+   "file_id": "BAACAgIAAxkBAAIHVmrJOIHbBoUMybEP6-zaveQLFXYyAAKFJQACbQd4SWm5nzNV9N9RPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬    Ip man 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/i?id=f733450a7c9512104d8288e7f3d133e52c489902-6994888-images-thumbs&n=13"
+   },
+   "205": {
+   "file_id": "BAACAgIAAxkBAAIHV2rJOIG0w8GmCnr0SLG4CASS2LLhAALjKQACbQd4SSyD3BxBfJAgPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬    Ip man 4\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+   "posterUrl": "https://avatars.mds.yandex.net/i?id=788edc630570fe254be4c60d3791c87840f9abbb-10962086-images-thumbs&n=13"
+   },
+   
+"206": {
+    "file_id": "BAACAgIAAxkBAAIEJ2q1WmxNrn9xhGTsKBLjF8tvdfZQAAJxGwACioTASboK58qgYG_NPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬     Sumerki: Zulmat ostonasidagi muhabbat   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaQXybBfvJ9baK54ipbwF4u_YJ1qz-dhKjShFf0GGQNacc065cgipSebz8&s=10"
+    
+  },
+  "207": {
+    "file_id": "BAACAgIAAxkBAAIEKWq1WvqYgI75dMyE1JJjRd09cYXOAALaHAACzsQISsCQ363mDq2lPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬     Sumerki: Yangi oy chiqishi   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeV0vKHGjodozKevlsgF3Yi2xckPaRCoVHaE9zSmdLDQ&s=10"
+},
+
+"208": {
+    "file_id": "BAACAgIAAxkBAAIEK2q1WzpEti5ftnoUHE7tLiJq4FCZAAJuHwACkAwISgABlVWs0mHa1T0E",
+    "caption": "🎬 **Kino nomi:**  🎬     Sumerki: Oy tutilishi  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://en-images-s.kinorium.com/movie/1080/461497.jpg?1528468341"
+
+
+},
+"209": {
+    "file_id": "BAACAgQAAxkBAAIELWq1W8UWEubGYUFuLv-5yetnvBtdAAJKDwACGHoJUp2xcH7v0Yi-PQQ",
+  "caption": "🎬 **Kino nomi:**  🎬     Sumerki: Tong Otishi  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4nurPzck0aMnHdP-wMNPyIXNgqDYam3GrMjz7Mffb6A&s  "
+   
+},
+
+"210": {
+    "file_id": "BAACAgEAAxkBAAIEL2q1XE88YbqGhZEFny77aDuK-41CAAILAgACVXGpRmk7m-_sviH8PQQ",
+"caption": "🎬 **Kino nomi:**  🎬     Sumerki: Tong Otishi 2  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://sun9-82.vkuserphoto.ru/s/v1/ig2/S30dr_4GE4RTzCIRwkT1cT-EjkzLJRi5IgBY_fE2VfXsxd38ldRGqAw0g3huYLwlBxZ9rSxaB5Gb8FR8joHq5k-Q.jpg?quality=96&as=32x42,48x64,72x96,108x143,160x212,240x319,360x478,480x637,540x717,640x850,720x956,964x1280&from=bu&u=gzilsox26ElbNP48z_nF2jedhY8gvFDn4nBsDv1TlUY&cs=640x0"
+},
+
+"211": {
+    "file_id": "BAACAgQAAxkBAAIHXGrJOuLt3ENPQabKT3QzsAaOw9hYAAJXDQACW7mIUKp5VDiSFHHhPQQ",
+   "caption": "🎬 **Kino nomi:**  🎬     Kapitan Amerika 1  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://ir.ozone.ru/s3/multimedia-g/6666084952.jpg"
+},
+"212": {
+  "file_id": "BAACAgQAAxkBAAIHXWrJOuJ65yzAfIyWKErKAAHv-G7uWQACWQ0AAlu5iFCYTNoAAZ4rDhI9BA",
+  "caption": "🎬 **Kino nomi:**  🎬     Kapitan Amerika 2  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+  "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/537097b6-799d-49c6-a366-48249f887a55/3840x"
+},
+  "213": {
+    "file_id": "BAACAgQAAxkBAAIKCWrNHErP-RUB5F13PvbhjypsGyHKAAJbCAACQ9-gUtVkEDnNlh27PQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Deadpool 1  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/i?id=1c70a838733b36f21ab6019847561326e735c56d-11478941-images-thumbs&n=13"
+  },
+  "214": {
+    "file_id": "BAACAgIAAxkBAAIKDWrNHXLXL3DqnXdGm_VPcU7rp37gAAIzqQACfecpS6zGsjqTtBRkPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Lutsifer  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://static.kinoafisha.info/k/series_posters/1920x1080/upload/series/posters/8/4/8/848/313266271595442401.jpg"
+  },
+  "215": {
+    "file_id": "BAACAgQAAxkBAAIKD2rNHh17kx4AATHorXUR_k5jR30AAVYAAmcZAAKAWPhRBuwsKFW1_Ek9BA",
+     "caption": "🎬 **Kino nomi:**  🎬     Malena 18+  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/a8d70268-3ad9-4f16-9ccd-1eed22632ffa/576x"
+  },
+  "216": {
+    "file_id": "BAACAgEAAxkBAAIKEWrNHs1CCAXbpfvHOB0IqudeIcy7AALqAgAC4NMBRC1M6ShA7mXnPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Meninig Ismim Xon   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/i?id=7d133e62ab0b35fcf8adaa0a2d97736d133c530e-4080474-images-thumbs&n=13"
+  },
+  "217": {
+    "file_id": "BAACAgIAAxkBAAIKFmrNH--l2GIITM8Xg2jbNN1k_Y1YAAIFIwACj0mxSYxbOL6woK47PQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Pakana Oshiq Zero   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://assets.voxcinemas.com/posters/P_HO00005909.jpg"
+  },
+  "218": {
+    "file_id": "BAACAgQAAxkBAAIKGmrNH-86-5O5zIO3lIOnXjjiU2hJAAJgCAAC50khULQTldKz7DLxPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Alouddin   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/i?id=05a7dc1147cb15ef1567a2d1dfdabb629f73f14c-12609997-images-thumbs&n=13"
+  },
+  "219": {
+    "file_id": "BAACAgIAAxkBAAIKFGrNH--Fk9NV_k9n1zfs1i_CbApXAALEBwACLQXJSXrD_GlCSquaPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Mo'jiza    \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1777765/404953ba-1d20-4f11-b953-8c48015b888e/576x"
+  },
+  "220": {
+    "file_id": "BAACAgQAAxkBAAIKFWrNH-_Kkd1wkyv1vOhbVGp9nH1wAAL3CgACpb2oURVCmcWzYzGjPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Muxlis   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://files.itv.uz/uploads/content/poster/2025/04/24/18c3c5b357d1cc17eed081a2d7921527-q-700x1002.jpeg"
+  },
+  "221": {
+    "file_id": "BAACAgQAAxkBAAIKGWrNH-8a5ILUc_mW3b_ZNcZI-V8rAAJ2FQACPngoU-ZySG58QwlJPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     1+1 Do'stlar   \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://ru-images-s.kinorium.com/movie/1080/537521.jpg?1763735121"
+  },
+  "222": {
+    "file_id": "BAACAgIAAxkBAAIKGGrNH-9X6lgRmFWjy7B9-FWZxNV1AAJ4DAAC8PHpSSfB2Ysxq99jPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Qalbaki o'yin    \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://img.kinochilar.com/uploads/posts/2023-10/1648879191_1614311390_poster-1.jpg"
+  },
+  "223": {
+    "file_id": "BAACAgQAAxkBAAIKF2rNH-9tbUHkh_XsgoZSbaykWMy9AAKMBwADIKFQuYmChbwQsUs9BA",
+     "caption": "🎬 **Kino nomi:**  🎬     Onno  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://i.pinimg.com/736x/95/a4/6f/95a46fff7d158a831a2cf238e6527296.jpg"
+  },
+  "224": {
+    "file_id": "BAACAgIAAxkBAAIKG2rNH-_nQxRQn9uhr_CYm2eJ59qCAAKoDgACq1bISCcRk3tcAaDOPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Changalzor  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://uzmax.net/uploads/posts/2021-04/thumbs/1619095722_changalzor-2017-uzbek-tilida.jpg"
+  },
+    "225": {
+    "file_id": "BAACAgEAAxkBAAIKcWrOgPC-sUSipmShUtvcXR1QaKJvAAJEAQACBeqIRhwu1eGs2GRoPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Jon Uik 1  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://images-s.kinorium.com/movie/poster/703219/w1500_53689677.jpg"
+  },
+    "226": {
+    "file_id": "BAACAgEAAxkBAAIKcmrOgPAUFt30jPIquZtnGUzEyRaRAAJFAQACBeqIRvUvRSqkKafdPQQ",
+     "caption": "🎬 **Kino nomi:**  🎬     Jon Uik 2  \n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/5ba3f3fe-73da-41e7-b977-2792658e411e/orig"
+  },
+
+
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
 
 
 
@@ -598,7 +914,10 @@
 },
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
 "3000": {
     "id": "BAACAgIAAxkBAAIGbmrFUF-2xw_Ob1w-BjKIB5QzDOKnAAJ5SgAC4MVoS5pt8T1nlqrxPQQ",
     "caption": "🎬 **Kino nomi:**  🎬  Kungfu Panda 4\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
@@ -662,6 +981,7 @@
     "posterUrl": "https://files.itv.uz/uploads/content/poster/2019/10/17/d7c08e3a9d0363b5a8c1fc0b062e96fc-q-700x1002.jpeg",
     "code": 3008
   },
+<<<<<<< HEAD
 "3009": {
    "file_id": "BAACAgEAAxkBAAIF2GrCgKl8pZHo12tzn8j0zjvWP3tEAAKwAwACcHVRRQRvEnr_lQklPQQ",
    "caption": "🎬 **Kino nomi:**  🎬   Kichkina Nikolya\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
@@ -669,12 +989,66 @@
    "posterUrl": "https://image.tmdb.org/t/p/original/pbi6qaGQG3ODMGAxDEoLLdqVNrj.jpg",
    "code":3009
  }
+=======
+  "3009": {
+    "file_id": "BAACAgEAAxkBAAIF2GrCgKl8pZHo12tzn8j0zjvWP3tEAAKwAwACcHVRRQRvEnr_lQklPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬   Kichkina Nikolya\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "category": "Multfilm",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/e221afb2-a8f3-49d2-bedd-22fc917cafed/600x900",
+    "code":3009
+  },
+  "3010": {
+    "file_id": "BAACAgIAAxkBAAIG7mrGqjljlc7a_9pdLQZ83UzSW0yEAAJhKQACymRISQaCRCmEPOBhPQQ",
+    "caption": "🎬 **Kino nomi:**  🎬   Kichkina Xo'jayin\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "category": "Multfilm",
+    "posterUrl": "https://avatars.mds.yandex.net/get-kinopoisk-image/1900788/4fbff70b-b601-40ca-8a4e-0cfd357153ef/3840x",
+    "code":3010
+ },
+  "3011": {
+    "file_id": "BAACAgQAAxkBAAIG8GrGquECub4AAYfBHlyq4R8g_oczQwACcAsAAsUnaFAXKBn8QmJtsT0E",
+    "caption": "🎬 **Kino nomi:**  🎬   Kichkina Xo'jayin 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+    "category": "Multfilm",
+    "posterUrl": "https://www.kino-teatr.ru/movie/poster/143995/104940.jpg",
+    "code":3011
+ },
+    "3012": {
+      "file_id": "BAACAgUAAxkBAAIG8mrGqy01iglSGFXqa1UDqGGb7VQXAAJGEAACV24JVzVix96qBLjyPQQ",
+      "caption": "🎬 **Kino nomi:**  🎬   Moana\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+      "category": "Multfilm",
+      "posterUrl": "https://avatars.mds.yandex.net/i?id=2376c1ece1a41b54f7a6303078f617d9084bde4f-12602673-images-thumbs&n=13",
+      "code":3012
+  },
+    "3013": {
+      "file_id": "BAACAgQAAxkBAAIG9GrGq5N6NFPHFDbYxBZUYyESj7_UAALTHAACBIshU10vBzQZYYbqPQQ",
+      "caption": "🎬 **Kino nomi:**  🎬   Moana 2\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+      "category": "Multfilm",
+      "posterUrl": "https://avatars.mds.yandex.net/i?id=2851f5ff9388b81466718edcf0b4e4a45eb6f964-3995454-images-thumbs&n=13",
+      "code":3013
+  },
+    "3014": {
+      "file_id": "BAACAgQAAxkBAAIG9mrGq9ZibpZjogtKNuFWqAkkgL-JAAKgIgACsp8BUd9ABt_B64WoPQQ",
+      "caption": "🎬 **Kino nomi:**  🎬   Moana 3\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+      "category": "Multfilm",
+      "posterUrl": "https://avatars.mds.yandex.net/i?id=047ca49e5654756f48b652d01bdbfd108bc47182-5255595-images-thumbs&n=13",
+      "code":3014
+  },
+    "3015": {
+      "file_id": "BAACAgQAAxkBAAIG-GrGrCz7USaNKEL_9i3ndugXQgZnAAJCEAAC-i4JUAezGaO6lbmZPQQ",
+      "caption": "🎬 **Kino nomi:**  🎬   Bolt\n🎭 **Janr:** Syujet\n⭐️ **Baho:** 10/10\n🍿 Yoqimli tomosha!",
+      "category": "Multfilm",
+      "posterUrl": "https://avatars.mds.yandex.net/i?id=0d0477f302526c56783faf3bb037ad9b8c10d9cc-2896823-images-thumbs&n=13",
+      "code":3015
+  }
+
+
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
 
 
 
 
 
 }
+<<<<<<< HEAD
 
 
 
@@ -748,3 +1122,5 @@
 
 
 
+=======
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2

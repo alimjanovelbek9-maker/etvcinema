@@ -115,6 +115,34 @@ const parseMoviesFromJson = (): MovieItem[] => {
   return moviesList.sort((a, b) => (Number(a.code ?? 0) > Number(b.code ?? 0) ? 1 : -1));
 };
 
+<<<<<<< HEAD
+=======
+const bundledMovies = parseMoviesFromJson();
+const bundledPostersById = new Map(
+  bundledMovies.map((movie) => [String(movie.code ?? movie.id), movie.posterUrl]),
+);
+
+const applyBundledPosterUrls = (movies: MovieItem[]) =>
+  movies.map((movie) => {
+    const posterUrl = bundledPostersById.get(String(movie.code ?? movie.id));
+    return posterUrl ? { ...movie, posterUrl } : movie;
+  });
+
+const mergeBundledMovies = (movies: MovieItem[]) => {
+  const mergedMovies = applyBundledPosterUrls(movies);
+  const existingMovieCodes = new Set(
+    mergedMovies
+      .filter((movie) => movie.category !== 'Serial')
+      .map((movie) => String(movie.code ?? movie.id)),
+  );
+  const missingBundledMovies = bundledMovies.filter(
+    (movie) => movie.category !== 'Serial' && !existingMovieCodes.has(String(movie.code ?? movie.id)),
+  );
+
+  return [...mergedMovies, ...missingBundledMovies];
+};
+
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
 export default function App() {
   const [activeTab, setActiveTab] = useState<NavTab>('home');
   const [isAdminPage, setIsAdminPage] = useState(false);
@@ -129,14 +157,23 @@ export default function App() {
 
   const [movies, setMovies] = useState<MovieItem[]>(() => {
     const saved = localStorage.getItem('app_movies_list');
+<<<<<<< HEAD
     return saved ? JSON.parse(saved) : parseMoviesFromJson();
+=======
+    return saved ? mergeBundledMovies(JSON.parse(saved) as MovieItem[]) : bundledMovies;
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
   });
 
   useEffect(() => {
     fetchMoviesFromCloud().then((cloudMovies) => {
       if (cloudMovies && cloudMovies.length > 0) {
+<<<<<<< HEAD
         const seededSerials = parseMoviesFromJson().filter((movie) => movie.category === 'Serial');
         const mergedMovies = cloudMovies.map((m) => ({ ...m }));
+=======
+        const seededSerials = bundledMovies.filter((movie) => movie.category === 'Serial');
+        const mergedMovies = mergeBundledMovies(cloudMovies.map((movie) => ({ ...movie })));
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
 
         seededSerials.forEach((seedSerial) => {
           const existingIndex = mergedMovies.findIndex((movie) => movie.title === seedSerial.title && movie.category === 'Serial');
@@ -304,7 +341,11 @@ export default function App() {
             }}
           />
 
+<<<<<<< HEAD
           <main className="px-3.5 pt-2 max-w-md mx-auto">
+=======
+          <main className="px-2 pt-2 w-full max-w-lg mx-auto">
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
             <div className="flex items-center justify-between mb-3 px-1">
               <h2 className="text-sm font-bold text-gray-400">
                 {filterCategory === 'serial'
@@ -339,7 +380,11 @@ export default function App() {
                 Hozircha ma'lumotlar mavjud emas.
               </div>
             ) : (
+<<<<<<< HEAD
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+=======
+              <div className="grid grid-cols-3 gap-2">
+>>>>>>> 671283a7db31b7ccdd2706a2b8414c5382f916d2
                 {displayedMovies.map((movie) => (
                   <div key={movie.id} onClick={() => handleMovieCardClick(movie)}>
                     <MovieCard item={movie} isDarkMode={isDarkMode} />
